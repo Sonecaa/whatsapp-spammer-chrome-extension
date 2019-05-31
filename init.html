@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Whatsapp Spammer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- development version, includes helpful console warnings -->
+  <script src="assets/js/jquery.js"></script>
+
+  <style>
+    #main {
+      width: 600px;
+      padding: 30px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div id="main">
+  
+    <div class="container">
+
+      <h4>Whatsapp Spammer Chrome Extension</h4>
+
+      <i class="material-icons">subdirectory_arrow_right</i>
+      <a href="https://web.whatsapp.com/">https://web.whatsapp.com/</a>
+
+      <br />
+      <br />
+
+      <form id="main-form">
+
+          <div class="form-group">
+            <label for="message-input">Message</label>
+            <input type="text" class="form-control" id="message-input"placeholder="Write your message here">
+          </div>
+
+          <div class="form-group">
+            <label for="reapeat-input">How many times u want to send this message</label>
+            <input type="number" class="form-control" id="reapeat-input">
+          </div>
+
+          <div class="form-group">
+            <label for="delay-input">Delay</label>
+            <input type="number" class="form-control" id="delay-input"  aria-describedby="delayHelp">
+            <small id="delayHelp" class="form-text text-muted">In mileseconds</small>
+          </div>
+
+          <hr />
+
+          <div class="d-flex align-items-center justify-content-end">
+              <div class="mr-auto p-2">
+                  <a href="https://github.com/Sonecaa"> <small class="d-flex"><i class="material-icons">call_received</i>   Follow me on GitHub</small>  </a>  
+              </div>
+              <div class="p-2">
+                  <button type="reset" class="btn btn-light text-right">Reset</button>
+              </div>
+              <div class="p-2">
+                  <button type="submit" onclick="send_form()" class="btn btn-success text-right">Send</button>
+              </div>
+          </div>
+          
+
+      </form>  
+      
+     
+
+    </div>   
+  </div>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
