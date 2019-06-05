@@ -39,17 +39,17 @@
 
           <div class="form-group">
             <label for="message-input">Message</label>
-            <input type="text" class="form-control" id="message-input"placeholder="Write your message here">
+            <input type="text" class="form-control" id="message-input"placeholder="Write your message here" required>
           </div>
 
           <div class="form-group">
             <label for="reapeat-input">How many times u want to send this message</label>
-            <input type="number" class="form-control" id="reapeat-input">
+            <input type="number" class="form-control" id="repeat-input" required>
           </div>
 
           <div class="form-group">
             <label for="delay-input">Delay</label>
-            <input type="number" class="form-control" id="delay-input"  aria-describedby="delayHelp">
+            <input type="number" class="form-control" id="delay-input"  aria-describedby="delayHelp" required> 
             <small id="delayHelp" class="form-text text-muted">In mileseconds</small>
           </div>
 
@@ -63,8 +63,11 @@
                   <button type="reset" class="btn btn-light text-right">Reset</button>
               </div>
               <div class="p-2">
-                  <button type="submit" onclick="send_form()" class="btn btn-success text-right">Send</button>
+                  <button type="submit" class="btn btn-success text-right">Send</button>
               </div>
+          </div>
+
+          <div id="alert-box" class="alert alert-warning" role="alert">
           </div>
           
 
